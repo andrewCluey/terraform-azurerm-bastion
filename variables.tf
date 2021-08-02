@@ -1,5 +1,5 @@
 variable "bastion_pip_name" {
-  type        = "type"
+  type        = string
   description = "description"
   default     = "type"
 }
