@@ -38,8 +38,8 @@ variable "availabililty_zone" {
   description = "The availability zone to allocate to the public IP of the new Bastion service."
   default     = "No-Zone"
   validation {
-    condition     = var.landing_zones == "No-Zone" || var.landing_zones == "Zone-Redundant" || var.landing_zones == 1 || var.landing_zones == 2 || var.landing_zones == 3
-    error_message = "Must be set to either `No-Zone`, `Zone-Redundant`, 1, 2 or 3"
+    condition     = var.pip_availability_zone== "No-Zone" || var.pip_availability_zone == "Zone-Redundant" || var.pip_availability_zone == 1 || var.pip_availability_zone == 2 || var.pip_availability_zone == 3
+    error_message = "Must be set to either `No-Zone`, `Zone-Redundant`, 1, 2 or 3."
   }
 }
 
