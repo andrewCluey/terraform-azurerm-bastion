@@ -3,7 +3,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">= 2.54.0"
+      version = ">= 2.74.0"
     }
   }
 }
@@ -14,6 +14,7 @@ resource "azurerm_public_ip" "bastion_pip" {
   resource_group_name = var.resource_group_name
   location            = var.location
   allocation_method   = "Static"
+  availability_zone   = var.availabililty_zone
   sku                 = "Standard"
 
   tags = var.tags
