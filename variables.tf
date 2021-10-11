@@ -33,7 +33,7 @@ variable "subnet_id" {
   description = "The ID of the subnet where the Bastion should be deployed."
 }
 
-variable "availabililty_zone" {
+variable "pip_availabililty_zone" {
   type        = string
   description = "The availability zone to allocate to the public IP of the new Bastion service."
   default     = "No-Zone"
